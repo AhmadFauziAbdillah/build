@@ -1,0 +1,368 @@
+/* 
+ * Main Stylesheet for Diabetes Clustering Dashboard
+ * Organized by component with clear sections
+ */
+
+/* ---------- RESET & BASE STYLES ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #212529;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* ---------- NAVBAR STYLES ---------- */
+.navbar {
+    padding: 0.75rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand i {
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.navbar .nav-link {
+    padding: 0.5rem 1rem;
+    position: relative;
+    font-weight: 500;
+}
+
+.navbar .nav-link i {
+    margin-right: 0.4rem;
+}
+
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar .nav-link:hover::after {
+    width: calc(100% - 2rem);
+}
+
+/* ---------- FOOTER STYLES ---------- */
+.footer {
+    background-color: #f8f9fa;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
+}
+
+.footer .container {
+    max-width: 800px;
+}
+
+.footer-brand {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.footer-nav a {
+    margin: 0 1rem;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.footer-nav a:hover {
+    color: #0d6efd;
+}
+
+.social-icons {
+    margin: 1.25rem 0;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    margin: 0 0.4rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #0d6efd;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    color: #6c757d;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+/* ---------- CARD STYLES ---------- */
+.card {
+    border-radius: 0.75rem;
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 1.25rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-title i {
+    margin-right: 0.5rem;
+}
+
+/* ---------- DASHBOARD STATS CARDS ---------- */
+.dashboard-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stats-label {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+}
+
+.stats-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- BUTTON STYLES ---------- */
+.btn {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ---------- TABLE STYLES ---------- */
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    font-weight: 600;
+    border-top: none;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table td {
+    vertical-align: middle;
+    padding: 0.75rem;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+.custom-table th, 
+.custom-table td {
+    padding: 1rem;
+}
+
+/* ---------- STATUS BADGES ---------- */
+.status-badge {
+    padding: 0.35rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* ---------- FORM ELEMENTS ---------- */
+.form-control,
+.form-select {
+    border-radius: 0.5rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.input-group-text {
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color: #f8f9fa;
+}
+
+/* ---------- YEAR SELECTOR ---------- */
+.year-select {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    font-size: 0.9rem;
+    min-width: 100px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.year-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* ---------- PROGRESS BARS ---------- */
+.progress {
+    height: 8px;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    background-color: #e9ecef;
+    overflow: hidden;
+}
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (max-width: 767.98px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .card-body {
+        padding: 1.25rem;
+    }
+    
+    .dashboard-card {
+        padding: 1.25rem;
+    }
+    
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .footer {
+        padding: 1.5rem 0;
+    }
+    
+    .footer-nav a {
+        margin: 0.5rem;
+    }
+    
+    .social-icons a {
+        margin: 0 0.3rem;
+    }
+}

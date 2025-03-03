@@ -1,0 +1,210 @@
+/* 
+ * Light Theme Specific Styles
+ * Applied when body has class "light-theme"
+ */
+
+/* ---------- GENERAL LIGHT THEME ---------- */
+body.light-theme {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Text color adjustments */
+.light-theme h1, .light-theme h2, .light-theme h3, 
+.light-theme h4, .light-theme h5, .light-theme h6 {
+    color: #212529;
+}
+
+.light-theme .text-muted {
+    color: #6c757d !important;
+}
+
+/* ---------- NAVBAR LIGHT THEME ---------- */
+.light-theme .navbar {
+    background-color: #0d6efd !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .navbar-brand,
+.light-theme .navbar .nav-link {
+    color: #ffffff !important;
+}
+
+.light-theme .navbar .nav-link:hover {
+    color: #f8f9fa !important;
+}
+
+/* ---------- FOOTER LIGHT THEME ---------- */
+.light-theme .footer {
+    background-color: #f8f9fa;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.light-theme .footer-brand {
+    color: #212529;
+}
+
+.light-theme .footer-nav a {
+    color: #6c757d;
+}
+
+.light-theme .footer-nav a:hover {
+    color: #0d6efd;
+}
+
+.light-theme .social-icons a {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+
+.light-theme .social-icons a:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.light-theme .copyright {
+    color: #6c757d;
+}
+
+/* ---------- CARD LIGHT THEME ---------- */
+.light-theme .card,
+.light-theme .dashboard-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.light-theme .card-header {
+    border-bottom-color: rgba(0, 0, 0, 0.125);
+}
+
+/* ---------- TABLE LIGHT THEME ---------- */
+.light-theme .table {
+    color: #212529;
+}
+
+.light-theme .table th {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.light-theme .table td, 
+.light-theme .table th {
+    border-color: #dee2e6;
+}
+
+.light-theme .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.light-theme .table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* ---------- FORM CONTROLS LIGHT THEME ---------- */
+.light-theme .form-control,
+.light-theme .form-select,
+.light-theme .input-group-text {
+    background-color: #ffffff;
+    border-color: #ced4da;
+    color: #212529;
+}
+
+.light-theme .form-control:focus,
+.light-theme .form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.light-theme .form-check-input {
+    background-color: #ffffff;
+    border-color: #ced4da;
+}
+
+.light-theme .form-check-label {
+    color: #212529;
+}
+
+/* ---------- YEAR SELECTOR LIGHT THEME ---------- */
+.light-theme .year-select {
+    background-color: #ffffff;
+    border-color: #ced4da;
+    color: #212529;
+}
+
+/* ---------- BADGE STYLES LIGHT THEME ---------- */
+.light-theme .status-badge.bg-success {
+    background-color: #d1e7dd !important;
+    color: #0f5132 !important;
+}
+
+.light-theme .status-badge.bg-warning {
+    background-color: #fff3cd !important;
+    color: #664d03 !important;
+}
+
+.light-theme .status-badge.bg-danger {
+    background-color: #f8d7da !important;
+    color: #842029 !important;
+}
+
+.light-theme .status-badge.bg-info {
+    background-color: #cff4fc !important;
+    color: #055160 !important;
+}
+
+.light-theme .status-badge.bg-secondary {
+    background-color: #e2e3e5 !important;
+    color: #41464b !important;
+}
+
+/* ---------- PROGRESS BARS LIGHT THEME ---------- */
+.light-theme .progress {
+    background-color: #e9ecef;
+}
+
+/* ---------- BUTTON OVERRIDES ---------- */
+.light-theme .btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.light-theme .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.light-theme .btn-light {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #212529;
+}
+
+.light-theme .btn-light:hover {
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    color: #212529;
+}
+
+/* ---------- ALERT STYLES LIGHT THEME ---------- */
+.light-theme .alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border-color: #badbcc;
+}
+
+.light-theme .alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+    border-color: #f5c2c7;
+}
+
+.light-theme .alert-warning {
+    background-color: #fff3cd;
+    color: #664d03;
+    border-color: #ffecb5;
+}
+
+.light-theme .alert-info {
+    background-color: #cff4fc;
+    color: #055160;
+    border-color: #b6effb;
+}

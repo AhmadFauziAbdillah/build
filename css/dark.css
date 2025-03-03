@@ -1,0 +1,220 @@
+/* 
+ * Dark Theme Specific Styles
+ * Applied when body has class "dark-theme"
+ */
+
+/* ---------- GENERAL DARK THEME ---------- */
+body.dark-theme {
+    background-color: #1a1d20;
+    color: #f8f9fa;
+}
+
+/* Text color adjustments */
+.dark-theme h1, .dark-theme h2, .dark-theme h3, 
+.dark-theme h4, .dark-theme h5, .dark-theme h6 {
+    color: #f8f9fa;
+}
+
+.dark-theme .text-muted {
+    color: #adb5bd !important;
+}
+
+/* ---------- NAVBAR DARK THEME ---------- */
+.dark-theme .navbar {
+    background-color: #212529 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .navbar-brand,
+.dark-theme .navbar .nav-link {
+    color: #ffffff !important;
+}
+
+.dark-theme .navbar .nav-link:hover {
+    color: #0d6efd !important;
+}
+
+/* ---------- FOOTER DARK THEME ---------- */
+.dark-theme .footer {
+    background-color: #212529;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .footer-brand {
+    color: #f8f9fa;
+}
+
+.dark-theme .footer-nav a {
+    color: #adb5bd;
+}
+
+.dark-theme .footer-nav a:hover {
+    color: #0d6efd;
+}
+
+.dark-theme .social-icons a {
+    background-color: rgba(248, 249, 250, 0.1);
+    color: #f8f9fa;
+}
+
+.dark-theme .social-icons a:hover {
+    background-color: #0d6efd;
+    color: #f8f9fa;
+}
+
+.dark-theme .copyright {
+    color: #adb5bd;
+}
+
+/* ---------- CARD DARK THEME ---------- */
+.dark-theme .card,
+.dark-theme .dashboard-card {
+    background-color: #343a40;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .card-header {
+    border-bottom-color: #495057;
+}
+
+/* ---------- TABLE DARK THEME ---------- */
+.dark-theme .table {
+    color: #f8f9fa;
+}
+
+.dark-theme .table th {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-theme .table td, 
+.dark-theme .table th {
+    border-color: #495057;
+}
+
+.dark-theme .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-theme .table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+/* ---------- FORM CONTROLS DARK THEME ---------- */
+.dark-theme .form-control,
+.dark-theme .form-select,
+.dark-theme .input-group-text {
+    background-color: #495057;
+    border-color: #6c757d;
+    color: #f8f9fa;
+}
+
+.dark-theme .form-control:focus,
+.dark-theme .form-select:focus {
+    background-color: #495057;
+    border-color: #0d6efd;
+    color: #f8f9fa;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.dark-theme .form-control::placeholder {
+    color: #adb5bd;
+}
+
+.dark-theme .form-check-input {
+    background-color: #495057;
+    border-color: #6c757d;
+}
+
+.dark-theme .form-check-label {
+    color: #f8f9fa;
+}
+
+/* ---------- YEAR SELECTOR DARK THEME ---------- */
+.dark-theme .year-select {
+    background-color: #495057;
+    border-color: #6c757d;
+    color: #f8f9fa;
+}
+
+/* ---------- BADGE STYLES DARK THEME ---------- */
+.dark-theme .status-badge.bg-success {
+    background-color: #0f5132 !important;
+    color: #d1e7dd !important;
+}
+
+.dark-theme .status-badge.bg-warning {
+    background-color: #664d03 !important;
+    color: #fff3cd !important;
+}
+
+.dark-theme .status-badge.bg-danger {
+    background-color: #842029 !important;
+    color: #f8d7da !important;
+}
+
+.dark-theme .status-badge.bg-info {
+    background-color: #055160 !important;
+    color: #cff4fc !important;
+}
+
+.dark-theme .status-badge.bg-secondary {
+    background-color: #41464b !important;
+    color: #e2e3e5 !important;
+}
+
+/* ---------- PROGRESS BARS DARK THEME ---------- */
+.dark-theme .progress {
+    background-color: #495057;
+}
+
+/* ---------- BUTTON OVERRIDES ---------- */
+.dark-theme .btn-outline-secondary {
+    color: #adb5bd;
+    border-color: #6c757d;
+}
+
+.dark-theme .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #f8f9fa;
+}
+
+.dark-theme .btn-light {
+    background-color: #343a40;
+    border-color: #495057;
+    color: #f8f9fa;
+}
+
+.dark-theme .btn-light:hover {
+    background-color: #495057;
+    border-color: #6c757d;
+    color: #f8f9fa;
+}
+
+.dark-theme .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* ---------- ALERT STYLES DARK THEME ---------- */
+.dark-theme .alert-success {
+    background-color: #0f5132;
+    color: #d1e7dd;
+    border-color: #0a3622;
+}
+
+.dark-theme .alert-danger {
+    background-color: #842029;
+    color: #f8d7da;
+    border-color: #58151c;
+}
+
+.dark-theme .alert-warning {
+    background-color: #664d03;
+    color: #fff3cd;
+    border-color: #332701;
+}
+
+.dark-theme .alert-info {
+    background-color: #055160;
+    color: #cff4fc;
+    border-color: #032c35;
+}
